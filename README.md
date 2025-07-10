@@ -52,7 +52,7 @@ This backend service is built following clean architecture principles, with supp
 
 ### Environment Files
 
-#### appsettings.json
+#### `appsettings.json`
 
 ```json
 {
@@ -73,3 +73,19 @@ This backend service is built following clean architecture principles, with supp
     "FixedWindowQueueLimit": 10
   }
 }
+```
+
+#### 📁 Folder Structure
+FinanceApp.API/
+├── Controllers/
+├── Middleware/
+├── Filters/
+├── Extensions/
+├── Swagger/
+├── JWTAuthenticationHandler/
+├── Infrastructure/
+├── Shared/
+├── appsettings.json
+├── Program.cs
+└── README.md
+
