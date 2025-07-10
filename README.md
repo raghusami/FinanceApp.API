@@ -89,3 +89,36 @@ FinanceApp.API/
 ├── Program.cs
 └── README.md
 
+### 🔧 How to Run (Local Dev)
+```
+git clone https://github.com/yourcompany/FinanceApp.API.git
+cd FinanceApp.API
+dotnet restore
+dotnet build
+dotnet run
+```
+👉 Visit https://localhost:44385/swagger for API documentation
+
+### ✅ API Testing (Swagger)
+Launch the app
+Navigate to /swagger
+Click Authorize and paste your JWT token
+Access secured endpoints
+
+### 🔄 CI/CD Integration (Optional)
+If you're using GitHub Actions, Azure DevOps, or any pipeline:
+Pre-deploy checks: Lint, Unit Tests
+Build pipeline: GitHub Actions / Azure DevOps
+Deployment: Azure App Service / Docker Container
+
+### 📝 License & Usage
+This codebase is proprietary and owned by [Your Company Name]. Unauthorized copying, distribution, or modification is strictly prohibited.
+
+### 📞 Support
+For internal support or issues:
+📧 Email: raghu.sarathkumar@gmail.com
+📞 Extension: 1234
+💬 Slack: #backend-financeapp
+
+
+
