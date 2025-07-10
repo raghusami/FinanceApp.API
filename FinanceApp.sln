@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.API", "FinanceApp.API\FinanceApp.API.csproj", "{2D258987-E894-494B-8FFB-3566D3A54669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.Application", "FinanceApp.Application\FinanceApp.Application.csproj", "{D7C7E078-AD0C-47F6-A139-ABAB3799D8CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.Domain", "FinanceApp.Domain\FinanceApp.Domain.csproj", "{65334202-4062-486D-A336-21E7A6016831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.Infrastructure", "FinanceApp.Infrastructure\FinanceApp.Infrastructure.csproj", "{F5D9C374-F3F3-4192-8F44-CEA157F56079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.Shared", "FinanceApp.Shared\FinanceApp.Shared.csproj", "{37B94AC8-F490-4D91-AD6F-A00681BE4DC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.JWTAuthenticationHandler", "FinanceApp.JWTAuthenticationHandler\FinanceApp.JWTAuthenticationHandler.csproj", "{A4C49CB4-5DE8-4A0A-8AFC-9327A50A559F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D258987-E894-494B-8FFB-3566D3A54669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D258987-E894-494B-8FFB-3566D3A54669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D258987-E894-494B-8FFB-3566D3A54669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D258987-E894-494B-8FFB-3566D3A54669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C7E078-AD0C-47F6-A139-ABAB3799D8CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C7E078-AD0C-47F6-A139-ABAB3799D8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C7E078-AD0C-47F6-A139-ABAB3799D8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C7E078-AD0C-47F6-A139-ABAB3799D8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65334202-4062-486D-A336-21E7A6016831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65334202-4062-486D-A336-21E7A6016831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65334202-4062-486D-A336-21E7A6016831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65334202-4062-486D-A336-21E7A6016831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D9C374-F3F3-4192-8F44-CEA157F56079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D9C374-F3F3-4192-8F44-CEA157F56079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D9C374-F3F3-4192-8F44-CEA157F56079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D9C374-F3F3-4192-8F44-CEA157F56079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B94AC8-F490-4D91-AD6F-A00681BE4DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B94AC8-F490-4D91-AD6F-A00681BE4DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B94AC8-F490-4D91-AD6F-A00681BE4DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B94AC8-F490-4D91-AD6F-A00681BE4DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C49CB4-5DE8-4A0A-8AFC-9327A50A559F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C49CB4-5DE8-4A0A-8AFC-9327A50A559F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C49CB4-5DE8-4A0A-8AFC-9327A50A559F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C49CB4-5DE8-4A0A-8AFC-9327A50A559F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
