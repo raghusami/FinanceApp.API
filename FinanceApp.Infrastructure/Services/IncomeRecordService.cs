@@ -27,10 +27,11 @@ public class IncomeRecordService : IIncomeRecordService
                 .Select(r => new IncomeRecordDto
                 {
                     Id = r.Id,
-                    IncomeDate = r.IncomeDate,
+                    IncomeDate = r.IncomeDate.ToString("yyyy-MM-dd"),
                     IncomeSource = r.IncomeSource,
                     Amount = r.Amount,
                     Notes = r.Notes,
+                    Currency = r.Currency,
                     IncomeType = r.IncomeType
                 }).ToListAsync();
         }
@@ -51,10 +52,11 @@ public class IncomeRecordService : IIncomeRecordService
             return new IncomeRecordDto
             {
                 Id = record.Id,
-                IncomeDate = record.IncomeDate,
+                IncomeDate = record.IncomeDate.ToString("yyyy-MM-dd"),
                 IncomeSource = record.IncomeSource,
                 Amount = record.Amount,
                 Notes = record.Notes,
+                Currency = record.Currency,
                 IncomeType = record.IncomeType
             };
         }
@@ -74,10 +76,11 @@ public class IncomeRecordService : IIncomeRecordService
 
             var record = new IncomeRecords
             {
-                IncomeDate = dto.IncomeDate,
+                IncomeDate = Convert.ToDateTime(dto.IncomeDate),
                 IncomeSource = dto.IncomeSource,
                 Amount = dto.Amount,
                 Notes = dto.Notes,
+                Currency = dto.Currency,
                 IncomeType = dto.IncomeType,
                 CreatedAt = DateTime.Now
             };
@@ -104,12 +107,12 @@ public class IncomeRecordService : IIncomeRecordService
         {
             var record = await _context.IncomeRecords.FindAsync(dto.Id);
             if (record == null) return false;
-
-            record.IncomeDate = dto.IncomeDate;
+            record.IncomeDate = Convert.ToDateTime(dto.IncomeDate);
             record.IncomeSource = dto.IncomeSource;
             record.Amount = dto.Amount;
             record.Notes = dto.Notes;
             record.IncomeType = dto.IncomeType;
+            record.Currency = dto.Currency;
             record.UpdatedAt = DateTime.Now;
 
             _context.IncomeRecords.Update(record);

@@ -178,7 +178,6 @@ app.UseSerilogRequestLogging();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<RequestLoggingMiddleware>();
 
-app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();  // 👈 Routing must be before CORS, Auth
 

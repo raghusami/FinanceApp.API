@@ -12,7 +12,6 @@ namespace FinanceApp.API.Controllers
     /// Controller to manage income record operations.
     /// </summary>
 
-    [Authorize]
     public class IncomeRecordsController : BaseController
     {
         private readonly IIncomeRecordService _service;
